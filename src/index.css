@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500&display=swap");
+
+@font-face {
+	font-family: "Coolvetica";
+	src: url("./assets/fonts/coolvetica.ttf") format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	--main: #20da91;
+	--accent: #f65ffa;
+	--highlight: #f6fb61;
+	--light: #f5f5f8;
+	--mid: #dde0e7;
+	--dark: #29292b;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var();
+	overflow-x: hidden;
+	width: 100dvw;
+	font-family: "Coolvetica", sans-serif;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill {
+	transition: background-color 5000s ease-in-out 0s;
+	-moz-transition: background-color 5000s ease-in-out 0s;
+}
+
+input,
+select {
+	background-color: transparent;
+	outline: none;
+}
+
+a:active,
+button:active {
+	transform: scale(0.98);
+	transition: all;
+	transition-duration: 200ms;
+}
+
+/* actives the hover effect on the bav links */
+.link {
+	position: relative;
+}
+
+.link::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background: var(--dark);
+	transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.link:hover::before {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
+}
