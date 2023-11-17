@@ -1,4 +1,5 @@
-import { useConcurrentTransition } from "./concurrent-transition"
-import { usePageTitle } from "./page-title"
+import useConcurrentTransition from "./concurrent-transition"
+import usescrollToTop from "./scroll-to-top"
+import usePageTitle from "./page-title"
 
-export { useConcurrentTransition, usePageTitle }
+export { useConcurrentTransition, usePageTitle, usescrollToTop }

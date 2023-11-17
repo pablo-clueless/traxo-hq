@@ -16,9 +16,8 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className={`"border-dark border-dark left-0 top-0 !z-[5] flex w-full items-center justify-between border-b bg-transparent bg-white px-4 py-4 lg:px-20 ${
-				scrolled ? "fixed" : "static"
-			}`}>
+			className={`left-0 top-0 !z-[5] flex w-full items-center justify-between bg-transparent bg-white px-4 py-4 lg:px-20 shadow ${scrolled ? "fixed" : "static"
+				}`}>
 			<Link to="/">TraxoHQ</Link>
 			<div className="flex items-center gap-10">
 				<div className="hidden items-center gap-4 lg:flex">

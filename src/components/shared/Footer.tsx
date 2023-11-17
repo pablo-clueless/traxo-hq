@@ -12,9 +12,9 @@ const Footer = () => {
 						TraxoHQ
 					</Link>
 				</div>
-				<div className="flex w-full flex-1 justify-between">
+				<div className="flex w-full flex-1 flex-wrap justify-between gap-5 lg:gap-0">
 					{footerLinks.map(({ heading, links }) => (
-						<div key={heading} className="flex flex-col gap-5">
+						<div key={heading} className="flex min-w-[250px] flex-1 flex-col gap-3">
 							<p className="text-lg">{heading}</p>
 							<div className="flex flex-col gap-2">
 								{links.map((link) => (
@@ -31,9 +31,12 @@ const Footer = () => {
 				</div>
 			</section>
 			<hr className="my-5" />
-			<section className="flex w-full items-center justify-between">
-				<p className="text-sm">
-					<b>TraxoHQ</b> &copy;{new Date().getFullYear()}
+			<section className="flex w-full flex-col items-center justify-between lg:flex-row">
+				<p className="text-center text-xs lg:text-left lg:text-sm">
+					Copyright &copy; {new Date().getFullYear()} |{" "}
+					<strong className="font-semibold">&ldquo;TraxoHQ&rdquo;</strong> and the{" "}
+					<strong className="font-semibold">&ldquo;TraxoHQ logo&rdquo;</strong> are
+					registered trademarks.
 				</p>
 				<div className="flex items-center gap-4">
 					{socialLinks.map((link, index) => (
@@ -43,6 +46,7 @@ const Footer = () => {
 					))}
 				</div>
 			</section>
+			<section className="w-full"></section>
 		</footer>
 	)
 }

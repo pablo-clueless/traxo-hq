@@ -1,7 +1,7 @@
 import { useEffect, useState, useTransition } from "react"
 import { useLocation } from "react-router-dom"
 
-export const useConcurrentTransition = () => {
+const useConcurrentTransition = () => {
 	const location = useLocation()
 	const [oldLocation, setOldLocation] = useState(location)
 	const [, startTransition] = useTransition()
@@ -22,3 +22,5 @@ export const useConcurrentTransition = () => {
 
 	return oldLocation
 }
+
+export default useConcurrentTransition

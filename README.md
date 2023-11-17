@@ -1,27 +1,30 @@
-# React + TypeScript + Vite
+# TraxoHQ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **TraxoHQ**, where learning meets
+innovation. We are passionate about providing an exceptional online
+learning experience tailored to your needs. Our platform boasts a diverse
+range of high-quality courses taught by industry experts, ensuring you
+gain valuable skills and knowledge. What sets us apart is our commitment
+to an interactive and engaging learning environment. From quizzes and
+projects to community forums, we strive to make learning enjoyable and
+effective. Enjoy the flexibility to learn at your own pace, connect with
+like-minded learners, and embark on a journey of personal and professional
+growth. Join us today and discover the endless possibilities that learning
+with **TraxoHQ** brings to your fingertips.
 
-Currently, two official plugins are available:
+## What we offer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Creating a learning platform involves providing valuable content, resources, and a positive learning experience. Encouraging people to join your learning platform can be motivated by various factors:
 
-## Expanding the ESLint configuration
+- Quality Content
+- Expert Instructors
+- Diverse Course Offerings
+- Interactive Learning Experience
+- Flexibility and Convenience
+- Community and Networking
+- Career Advancement Opportunities
+- Free Content
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## We're looking for spomsors
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Support us to provide better contents to more learners.

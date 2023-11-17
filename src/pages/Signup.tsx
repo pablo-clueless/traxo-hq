@@ -5,8 +5,8 @@ import { useFormik } from "formik"
 import axios from "axios"
 
 import { EducationLevel, EmploymentStatus, LearningTracks } from "constants"
+import { CountryProps, CourseProps, StateProps } from "types"
 import { Button, Input, Loader } from "components"
-import { CountryProps, StateProps } from "types"
 import { socialLinks } from "constants"
 import { usePageTitle } from "hooks"
 import styles from "utils/styles"
@@ -29,7 +29,7 @@ const initialValues = {
 
 const Signup = () => {
 	const [countries, setCountries] = useState<CountryProps[]>([])
-	const [courses, setCourses] = useState<{ name: string }[]>([])
+	const [courses, setCourses] = useState<CourseProps[]>([])
 	const [states, setStates] = useState<StateProps[]>([])
 	usePageTitle("Sign up for your account")
 
@@ -176,14 +176,14 @@ const Signup = () => {
 						</Input>
 						<Input as="select" label="Track" name="track" onChange={handleChange}>
 							{LearningTracks.map((track) => (
-								<option key={track.name} value={track.name}>
+								<option key={track.id} value={track.name}>
 									{track.name}
 								</option>
 							))}
 						</Input>
 						<Input as="select" label="Course" name="course" onChange={handleChange}>
 							{courses?.map((course) => (
-								<option key={course.name} value={course.name}>
+								<option key={course.id} value={course.name}>
 									{course.name}
 								</option>
 							))}

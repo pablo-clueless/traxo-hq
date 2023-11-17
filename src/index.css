@@ -34,11 +34,16 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: var();
 	overflow-x: hidden;
 	width: 100dvw;
 	font-family: "Coolvetica", sans-serif;
+	color: var(--dark);
 }
 
 input:-webkit-autofill,
@@ -82,4 +87,31 @@ button:active {
 		right: auto;
 		width: 100%;
 	}
+}
+
+.clip-star {
+	clip-path: polygon(
+		1% 0%,
+		31% 39%,
+		38% 0%,
+		53% 38%,
+		64% 0%,
+		69% 38%,
+		93% 0%,
+		75% 50%,
+		100% 58%,
+		66% 64%,
+		82% 100%,
+		55% 66%,
+		44% 100%,
+		32% 69%,
+		0% 99%,
+		19% 66%,
+		1% 55%,
+		18% 45%
+	);
+}
+
+.clip-circle {
+	clip-path: circle(50% at 50% 50%);
 }

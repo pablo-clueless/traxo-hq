@@ -1,7 +1,9 @@
 import { useEffect } from "react"
 
-export const usePageTitle = (title: string) => {
+const usePageTitle = (title: string) => {
 	useEffect(() => {
 		document.title = `${title} - TraxoHQ`
 	}, [title])
 }
+
+export default usePageTitle

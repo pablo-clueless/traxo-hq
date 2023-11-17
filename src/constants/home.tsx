@@ -1,8 +1,13 @@
 import {
+	Books,
+	Chalkboard,
 	ChartLineUp,
+	Clock,
 	Coins,
 	SealCheck,
 	ShieldCheck,
+	UserCircleGear,
+	UsersThree,
 } from "@phosphor-icons/react"
 
 export const studyPros = [
@@ -28,5 +33,48 @@ export const studyPros = [
 		label: "Growth Potential",
 		content:
 			"Impedit! Animi nulla quasi iusto quam, assumenda error consectetur aspernatur harum sapiente ad, deserunt cupiditate vitae quos.",
+	},
+]
+
+export const Benefits = [
+	{
+		icon: <SealCheck />,
+		label: "Quality Content",
+		content: "",
+	},
+	{
+		icon: <UserCircleGear />,
+		label: "Expert Instructors",
+		content: "",
+	},
+	{
+		icon: <Books />,
+		label: "Diverse Course Offerings",
+		content: "",
+	},
+	{
+		icon: <Chalkboard />,
+		label: "Interactive Learning Experience",
+		content: "",
+	},
+	{
+		icon: <Clock />,
+		label: "Flexibility and Convenience",
+		content: "",
+	},
+	{
+		icon: <UsersThree />,
+		label: "Community and Networking",
+		content: "",
+	},
+	{
+		icon: <ChartLineUp />,
+		label: "Career Advancement Opportunities",
+		content: "",
+	},
+	{
+		icon: <Coins />,
+		label: "Free Content",
+		content: "",
 	},
 ]

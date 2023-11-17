@@ -2,7 +2,7 @@ import React, { ComponentProps } from "react"
 import { LinkProps } from "react-router-dom"
 
 export type UserProps = {
-	_id: string
+	id: string
 	firstName: string
 	lastName: string
 	email: string
@@ -10,21 +10,25 @@ export type UserProps = {
 }
 
 export type TrackProps = {
-	_id: string
+	id: string
 	name: string
-	course: CourseProps[]
+	description: string
+	icon: JSX.Element
+	courses: CourseProps[]
 }
 
 export type CourseProps = {
-	_id: string
+	id: string
 	name: string
-	modules: ModuleProps[]
+	description: string
+	duration: number
+	modules?: ModuleProps[]
 }
 
 export type ModuleProps = {
-	_id: string
+	id: string
 	name: string
-	duration: string
+	duration: number
 }
 
 export type InputProps =

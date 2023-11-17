@@ -8,6 +8,10 @@ export default {
 		extend: {
 			boxShadow: {
 				protrusion: "4px 4px 0px 0px #29292b",
+				"protrusion-xs": "2px 2px 0px 0px #29292b",
+				"protrusion-md": "6px 6px 0px 0px #29292b",
+				"protrusion-xl": "8px 8px 0px 0px #29292b",
+				"protrusion-2xl": "10px 10px 0px 0px #29292b",
 			},
 			colors: {
 				main: "#20DA91",
