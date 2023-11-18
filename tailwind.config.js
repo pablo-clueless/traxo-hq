@@ -6,6 +6,8 @@ export default {
 			jost: ["Jost", "sans-serif"],
 		},
 		extend: {
+			animation: {},
+			backgroundImage: {},
 			boxShadow: {
 				protrusion: "4px 4px 0px 0px #29292b",
 				"protrusion-xs": "2px 2px 0px 0px #29292b",
@@ -21,6 +23,7 @@ export default {
 				mid: "#dde0e7",
 				dark: "#29292b",
 			},
+			keyframes: {},
 		},
 	},
 	plugins: [],

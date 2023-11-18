@@ -21,7 +21,7 @@ export const LearningTracks: TrackProps[] = [
 		name: "engineering",
 		icon: <Cpu />,
 		description:
-			"Explore the world of engineering with our diverse set of courses. Whether you're interested in backend development, cloud solutions, or crafting seamless user interfaces, we've got the expertise to guide you through the intricacies of each domain.",
+			"Explore the world of engineering with our diverse set of courses. Whether you're interested in backend development, cloud solutions, or building user interfaces, we've got the expertise to guide you.",
 		courses: [
 			{
 				id: "890db345-4dd8-461e-ba3f-9c2f9840045b",
@@ -147,7 +147,7 @@ export const LearningTracks: TrackProps[] = [
 		name: "data",
 		icon: <Database />,
 		description:
-			"Immerse yourself in the world of data. Whether you're fascinated by analyzing data patterns, engineering data solutions, or delving into the intricacies of data science, our courses provide a comprehensive journey.",
+			"Immerse yourself in the world of data. Whether you're fascinated by analyzing data patterns, engineering data solutions, or delving into data science, our courses provide a comprehensive journey.",
 		courses: [
 			{
 				id: "38519ddc-4b45-4212-987b-4cdfacd75f15",

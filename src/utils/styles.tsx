@@ -3,10 +3,10 @@ export default {
 	heading: "text-3xl lg:text-5xl flex items-center gap-1",
 	subheading: "text-lg lg:text-xl font-jost ",
 	link: "",
-	navLink: (isActive: boolean) =>
-		`text-sm transition-all duration-300 capitalize link ${
+	navLink: (isActive: boolean, xl?: boolean) =>
+		`transition-all duration-300 capitalize link ${
 			isActive ? "text-main" : "text-dark"
-		}`,
+		} ${xl ? "text-xl" : "text-sm"}`,
 	label:
 		"text-base lg:text-lg font-jost text-dark w-fit mb-4 relative before:absolute before:top-1/2 before:-left-4 before:w-10 before:h-10 before:rounded-full before:bg-main before:!-z-[1] before:-translate-y-1/2",
 	button:

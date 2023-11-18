@@ -15,8 +15,8 @@ const Home = () => {
 			<Navbar />
 			<main className="w-full">
 				<section className="grid min-h-[75dvh] w-full grid-cols-1 border-y border-dark lg:grid-cols-2">
-					<div className="flex h-full w-full flex-col items-start justify-center bg-main px-5 py-20">
-						<p className="text-5xl lg:text-8xl">
+					<div className="flex h-full w-full flex-col items-start justify-center bg-main px-5 py-32">
+						<p className="text-6xl lg:text-8xl">
 							Keep learning & unlock great{" "}
 							<span className="text-highlight">potential.</span>
 						</p>
@@ -50,18 +50,15 @@ const Home = () => {
 				</section>
 				<section className="flex w-full flex-col items-center px-5 py-10 lg:px-20">
 					<p className={styles.heading}>Tracks</p>
-					<div className="my-5 flex w-full flex-wrap items-center justify-center gap-20">
+					<div className="my-5 flex w-full flex-wrap items-center justify-center gap-4 lg:gap-20">
 						{LearningTracks.map((track) => (
 							<Link
 								key={track.id}
 								to={`/tracks/${track.id}`}
-								className="group relative aspect-square w-[200px] cursor-pointer overflow-hidden rounded-md border-2 border-dark bg-highlight shadow-protrusion lg:w-[250px]">
-								<span className="absolute left-0 top-0 grid h-full w-full place-items-center text-9xl text-dark/30 transition-all duration-300 group-hover:scale-125 lg:text-[150px]">
-									{track.icon}
-								</span>
-								<div className="flex h-full w-full flex-col items-center justify-center">
-									<p className="text-xl capitalize lg:text-2xl">{track.name}</p>
-								</div>
+								className="group w-full rounded-md border-2 border-dark bg-highlight p-5 shadow-protrusion lg:aspect-[3/2] lg:w-[300px]">
+								<span className="text-2xl text-main lg:text-4xl">{track.icon}</span>
+								<p className="text-xl capitalize lg:text-2xl">{track.name}</p>
+								<p className="font-jost text-xs lg:text-sm">{track.description}</p>
 							</Link>
 						))}
 					</div>

@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import { Suspense } from "react"
 
 import { useConcurrentTransition } from "hooks"
-import { Loader } from "components"
+import { Dashboard, Loader } from "components"
 import {
 	About,
 	Blog,
@@ -10,6 +10,7 @@ import {
 	Contact,
 	Course,
 	Home,
+	Learning,
 	ResetPassword,
 	Signin,
 	Signup,
@@ -34,6 +35,9 @@ const Router = () => {
 				<Route path="/signin" element={<Signin />} />
 				<Route path="/signup" element={<Signup />} />
 				<Route path="/reset-password" element={<ResetPassword />} />
+				<Route path="/dashboard" element={<Dashboard />}>
+					<Route index element={<Learning />} />
+				</Route>
 			</Routes>
 		</Suspense>
 	)
