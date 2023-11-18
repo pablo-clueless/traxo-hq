@@ -7,6 +7,7 @@ export type UserProps = {
 	lastName: string
 	email: string
 	phone: string
+	image: string
 }
 
 export type TrackProps = {

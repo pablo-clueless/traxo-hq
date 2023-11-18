@@ -1,9 +1,15 @@
 import { EducationLevel, EmploymentStatus, LearningTracks } from "./form"
-import { footerLinks, navLinks, socialLinks } from "./navigation"
 import { Benefits, studyPros } from "./home"
+import {
+	DashboardLinks,
+	footerLinks,
+	navLinks,
+	socialLinks,
+} from "./navigation"
 
 export {
 	Benefits,
+	DashboardLinks,
 	EducationLevel,
 	EmploymentStatus,
 	footerLinks,
