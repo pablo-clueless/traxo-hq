@@ -8,7 +8,7 @@ type Props = ComponentProps<"div"> & {
 
 const Hamburger = (props: Props) => {
 	return (
-		<div className={`hamburger ${props.toggle ? "opened" : ""}`} {...props}>
+		<div className={`hamburger ${props.toggle ? "opened" : "close"}`} {...props}>
 			<svg width="30" height="30" viewBox="0 0 100 100">
 				<path
 					className="line line1"

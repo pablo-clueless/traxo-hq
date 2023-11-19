@@ -6,7 +6,9 @@ export default {
 			jost: ["Jost", "sans-serif"],
 		},
 		extend: {
-			animation: {},
+			animation: {
+				wave: "wave 1s linear infinite",
+			},
 			backgroundImage: {},
 			boxShadow: {
 				protrusion: "4px 4px 0px 0px #29292b",
@@ -23,7 +25,19 @@ export default {
 				mid: "#dde0e7",
 				dark: "#29292b",
 			},
-			keyframes: {},
+			keyframes: {
+				wave: {
+					"0%": {
+						transform: "scale(0)",
+					},
+					"50%": {
+						transform: "scale(1)",
+					},
+					"100%": {
+						transform: "scale(0)",
+					},
+				},
+			},
 		},
 	},
 	plugins: [],
