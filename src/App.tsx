@@ -8,7 +8,7 @@ import Router from "router"
 const App = () => {
 	useEffect(() => {
 		OneSignal.init({
-			appId: import.meta.env.VITE_ONESIGNAL_ID,
+			appId: String(import.meta.env.VITE_ONESIGNAL_ID),
 			notifyButton: {
 				enable: true,
 			},
