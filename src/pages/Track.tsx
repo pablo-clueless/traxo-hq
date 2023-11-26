@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 
 import { usePageTitle, usescrollToTop } from "hooks"
 import { Footer, Loader, Navbar } from "components"
-import { LearningTracks } from "constants"
+import { LearningTracks } from "constants/index"
 import { capitalize } from "utils"
 import styles from "utils/styles"
 

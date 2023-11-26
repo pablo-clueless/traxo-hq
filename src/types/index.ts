@@ -8,6 +8,7 @@ export type UserProps = {
 	email: string
 	phone: string
 	image: string
+	track: TrackTypes
 }
 
 export type TrackProps = {
@@ -31,6 +32,27 @@ export type ModuleProps = {
 	name: string
 	duration: number
 }
+
+export type BookProps = {
+	id: string
+	title: string
+	author: string
+	year: Date | string
+	cover: string
+	content: string
+	course: TrackTypes
+}
+
+export type TrackTypes =
+	| "backend engineering"
+	| "cloud engineering"
+	| "frontend engineering"
+	| "data analysis"
+	| "data engineering"
+	| "data science"
+	| "ui/ux design"
+	| "graphics design"
+	| "branding & logo"
 
 export type InputProps =
 	| (ComponentProps<"input"> & {
@@ -80,4 +102,29 @@ export interface CountryProps {
 export interface StateProps {
 	name: string
 	state_code: string
+}
+
+export interface HttpErrorProps {
+	response: {
+		data: {
+			message: string
+			name: string
+			options: {}
+			response: {
+				message: string
+				error: string
+				statusCode: number
+			}
+			status: number
+		}
+	}
+}
+
+export type LogLevelProps = "success" | "error" | "warning" | "info" | "default"
+
+export interface AlertProps {
+	type: LogLevelProps
+	message: string
+	header?: string
+	onClose: () => void
 }

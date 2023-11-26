@@ -1,3 +1,4 @@
+export { default as Alert } from "./shared/Alert"
 export { default as Button } from "./shared/Button"
 export { default as ErrorFallback } from "./shared/ErrorFallback"
 export { default as Footer } from "./shared/Footer"

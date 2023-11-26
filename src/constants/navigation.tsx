@@ -7,7 +7,6 @@ import {
 	FacebookLogo,
 	Gear,
 	LinkedinLogo,
-	SealCheck,
 	Tray,
 	TwitterLogo,
 	User,
@@ -15,13 +14,32 @@ import {
 
 export const DashboardLinks = [
 	{ icon: <User weight="duotone" />, label: "profile", url: "/dashboard" },
-	{ icon: <Book weight="duotone" />, label: "courses", url: "/dashboard" },
-	{ icon: <SealCheck weight="duotone" />, label: "badges", url: "/dashboard" },
-	{ icon: <Books weight="duotone" />, label: "library", url: "/dashboard" },
-	{ icon: <Tray weight="duotone" />, label: "inbox", url: "/dashboard" },
-	{ icon: <Bell weight="duotone" />, label: "notifications", url: "/dashboard" },
-	{ icon: <CreditCard weight="duotone" />, label: "billing", url: "/dashboard" },
-	{ icon: <Gear weight="duotone" />, label: "settings", url: "/dashboard" },
+	{
+		icon: <Book weight="duotone" />,
+		label: "courses",
+		url: "/dashboard/courses",
+	},
+	{
+		icon: <Books weight="duotone" />,
+		label: "library",
+		url: "/dashboard/library",
+	},
+	{ icon: <Tray weight="duotone" />, label: "inbox", url: "/dashboard/inbox" },
+	{
+		icon: <Bell weight="duotone" />,
+		label: "notifications",
+		url: "/dashboard/notifications",
+	},
+	{
+		icon: <CreditCard weight="duotone" />,
+		label: "billing",
+		url: "/dashboard/billing",
+	},
+	{
+		icon: <Gear weight="duotone" />,
+		label: "settings",
+		url: "/dashboard/settings",
+	},
 ]
 
 export const footerLinks = [

@@ -24,7 +24,7 @@ const ResetPassword = () => {
 					associated with your account.
 				</p>
 				<form onSubmit={handleSubmit} className="my-4 flex w-full flex-col gap-4">
-					<Input label="Email" type="email" name="email" onChange={handleChange} />
+					<Input label="Email" type="email" id="email" onChange={handleChange} />
 					<Button as="button" type="submit">
 						Proceed
 					</Button>

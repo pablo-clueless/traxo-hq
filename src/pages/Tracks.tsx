@@ -2,8 +2,8 @@ import { ArrowRight } from "@phosphor-icons/react"
 import { useNavigate } from "react-router-dom"
 
 import { usePageTitle, usescrollToTop } from "hooks"
+import { LearningTracks } from "constants/index"
 import { Footer, Navbar } from "components"
-import { LearningTracks } from "constants"
 import styles from "utils/styles"
 
 const Tracks = () => {

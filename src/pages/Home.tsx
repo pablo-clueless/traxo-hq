@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-import { Benefits, LearningTracks, studyPros } from "constants"
+import { Benefits, LearningTracks, studyPros } from "constants/index"
 import { usePageTitle, usescrollToTop } from "hooks"
 import { Button, Footer, Navbar } from "components"
 import { image_1, learning } from "assets/images"

@@ -3,6 +3,7 @@ export default {
 	content: ["./src/**/*.{ts,tsx}", "./index.html"],
 	theme: {
 		fontFamily: {
+			coolvetica: ["Coolvetica", "sans-serif"],
 			jost: ["Jost", "sans-serif"],
 		},
 		extend: {
