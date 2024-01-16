@@ -115,3 +115,31 @@ button:active {
 .clip-circle {
 	clip-path: circle(50% at 50% 50%);
 }
+
+/* react toastify */
+.Toastify__toast-container {
+	width: fit-content;
+	font-family: "Coolvetica", sans-serif;
+}
+
+.Toastify__toast {
+	font-size: 12px;
+	width: fit-content;
+	gap: 4px;
+	margin-bottom: 0.5rem;
+}
+
+.Toastify__toast-body {
+	width: fit-content;
+	font-family: "Coolvetica", sans-serif;
+}
+
+.Toastify__toast-container--top-right {
+	right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+	.Toastify__toast {
+		font-size: 14px;
+	}
+}
