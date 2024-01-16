@@ -1,4 +1,6 @@
 import { ErrorBoundary } from "react-error-boundary"
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 import OneSignal from "react-onesignal"
 import { useEffect } from "react"
 
@@ -19,6 +21,7 @@ const App = () => {
 		<ErrorBoundary
 			FallbackComponent={ErrorFallback}
 			onReset={() => typeof window !== undefined && window.location.reload()}>
+			<ToastContainer />
 			<Router />
 		</ErrorBoundary>
 	)

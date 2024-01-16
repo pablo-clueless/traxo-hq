@@ -122,9 +122,11 @@ export interface HttpErrorProps {
 
 export type LogLevelProps = "success" | "error" | "warning" | "info" | "default"
 
-export interface AlertProps {
-	type: LogLevelProps
-	message: string
-	header?: string
-	onClose: () => void
+export type Testimonial = {
+	id: string
+	name: string
+	image: string
+	content: string
+	company: string
+	position: string
 }

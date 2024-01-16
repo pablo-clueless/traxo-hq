@@ -3,11 +3,12 @@ import { Link } from "react-router-dom"
 import { Benefits, LearningTracks, studyPros } from "constants/index"
 import { usePageTitle, usescrollToTop } from "hooks"
 import { Button, Footer, Navbar } from "components"
-import { image_1, learning } from "assets/images"
+import { testimonials } from "testimonials"
+import { learning } from "assets/images"
 import styles from "utils/styles"
 
 const Home = () => {
-	usePageTitle("Home")
+	usePageTitle("Welcome to Traxo")
 	usescrollToTop()
 
 	return (
@@ -55,7 +56,7 @@ const Home = () => {
 							<Link
 								key={track.id}
 								to={`/tracks/${track.id}`}
-								className="group w-full rounded-md border-2 border-dark bg-highlight p-5 shadow-protrusion lg:aspect-[3/2] lg:w-[300px]">
+								className="group w-full rounded-md border-2 border-dark bg-highlight p-5 shadow-protrusion-xl transition-all duration-500 hover:shadow-none lg:aspect-[3/2] lg:w-[300px]">
 								<span className="text-2xl text-main lg:text-4xl">{track.icon}</span>
 								<p className="text-xl capitalize lg:text-2xl">{track.name}</p>
 								<p className="font-jost text-xs lg:text-sm">{track.description}</p>
@@ -63,8 +64,8 @@ const Home = () => {
 						))}
 					</div>
 				</section>
-				<section className="grid w-full grid-cols-1 gap-4 lg:grid-cols-2">
-					<div className="h-full w-full px-5 py-10 lg:px-20">
+				<section className="flex w-full flex-col gap-4 px-5 py-10 lg:px-20">
+					<div className="w-full">
 						<p className={styles.label}>Why TraxoHQ</p>
 						<p className="my-2 text-2xl lg:text-4xl">
 							Get access to the best courses
@@ -81,17 +82,12 @@ const Home = () => {
 							platform offers a pathway to success. Join us and embark on a journey of
 							knowledge, growth, and community.
 						</p>
-						<img
-							src={image_1}
-							alt=""
-							className="mt-4 h-[250px] w-full rounded object-cover object-top lg:h-[370px]"
-						/>
 					</div>
-					<div className="flex h-full w-full flex-col items-start gap-4 px-5 py-10">
+					<div className="grid w-full grid-cols-2 gap-4 lg:grid-cols-4">
 						{Benefits.map((benefit, index) => (
 							<div
 								key={index}
-								className="flex w-full cursor-pointer items-center gap-4 rounded bg-main p-4 transition-all duration-300 hover:scale-[1.02]">
+								className="flex w-full items-center gap-4 rounded bg-main p-4 shadow-protrusion-xs">
 								<span className="grid place-items-center rounded bg-highlight p-2 text-xl shadow-protrusion lg:text-3xl">
 									{benefit.icon}
 								</span>
@@ -107,8 +103,29 @@ const Home = () => {
 				</section>
 				<section className="flex w-full flex-col items-center bg-highlight/[0.6] px-5 py-10 lg:px-20">
 					<p className={styles.heading}>Testimonials</p>
-					<div className="my-4 flex w-full items-center gap-4"></div>
+					<div className="flex w-full flex-col">
+						<div className="my-4 flex w-full flex-wrap items-center justify-center gap-4">
+							{testimonials.map((item) => (
+								<div
+									key={item.id}
+									className="flex w-full flex-col items-center overflow-hidden rounded bg-dark p-2 lg:w-[300px]">
+									<div className="q-10 aspect-square rounded-full bg-light lg:w-20">
+										<img
+											src={item.image}
+											alt=""
+											className="h-full w-full rounded-full object-cover"
+										/>
+									</div>
+									<div className="w-full">
+										<p className="text-highlight lg:text-lg">{item.content}</p>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
 				</section>
+				{/* <section className="h-[50dvh] w-full bg-dark/40 bg-cover bg-fixed bg-blend-multiply"></section>
+				<section className="h-[50dvh] w-full bg-dark/40 bg-cover bg-fixed bg-blend-multiply"></section> */}
 			</main>
 			<Footer />
 		</>

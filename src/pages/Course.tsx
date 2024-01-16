@@ -47,7 +47,10 @@ const Course = () => {
 						{course.description}
 					</p>
 					<p className="font-jost text-sm lg:text-base">
-						Duration: <b className="text-accent">{course.duration} weeks</b>
+						Duration:{" "}
+						<b className="text-accent">
+							{course.modules?.reduce((acc, cor) => cor.duration + acc, 0)} weeks
+						</b>
 					</p>
 					<div className="mt-10 w-full">
 						<p className={styles.label}>Modules</p>
